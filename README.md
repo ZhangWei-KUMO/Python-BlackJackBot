@@ -30,3 +30,10 @@
 ssh-keygen -t rsa -C "lewis.q.zhang@letsallin.com" -f ~/.ssh/id_rsa_black
 cat /home/ubuntu/.ssh/id_rsa_black.pub
 ```
+
+#### 账户更替
+打开zsh终端
+```bash
+git config --global user.name "DoctorLewis"
+git config --global user.email "lewis.q.zhang@letsallin.com"
+```
