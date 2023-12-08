@@ -5,27 +5,28 @@
 
 # Python-BlackJackBot
 
-This is the code for my Telegram Bot with which you can play the game Black Jack. 
-You can find the hosted version of it here: https://telegram.me/BlackJackBot
+这是我为 Telegram Bot 编写的代码，你可以通过它玩黑杰克游戏。
+你可以在这里找到托管版本：https://telegram.me/BlackJackBot
 
-## Setup
-This project is really easy to set up. No matter which of the following ways you'll use, you'll always need a config file.
-To create one, simply copy the existing `config.sample.py` file and name it `config.py`. Enter your bot token and make your changes accordingly.
+## 设置
+这个项目非常容易设置。无论你使用以下哪种方式，你都需要一个配置文件。
+要创建一个，只需复制现有的 `config.sample.py` 文件，并将其命名为 `config.py`。输入你的机器人令牌并相应地进行更改。
 
-Then you're left with several ways to run this bot.
+然后，你可以通过几种方式运行这个机器人。
 
-### 1.) Cloning the repo
-If you want to run this code from source, you can just `git clone` this repo.
-It's recommended to create a new virtual environment (`python3 -m venv /path/to/venv`).
-This bot uses the [python-telegram-bot](https://python-telegram-bot.org/) framework to make Telegram API calls.
-You can install it (and potential other requlrements) like that:
+### 1. 克隆仓库
+如果你想从源代码运行这段代码，你可以简单地使用 `git clone` 克隆这个仓库。
+建议创建一个新的虚拟环境（`python3 -m venv /path/to/venv`）。
+这个机器人使用 [python-telegram-bot](https://python-telegram-bot.org/) 框架来调用 Telegram API。
+你可以这样安装它（和可能的其他要求）：
 
 ``pip install -r requirements.txt``
 
-Afterwards just run `python3 bot.py` and if done right, you'll be left with a working bot.
+之后只需运行 `python3 bot.py`，如果操作正确，你将得到一个运行中的机器人。
 
-### 2.) Docker
-This project also contains a `Dockerfile` as well as a pre-built [Docker image](https://hub.docker.com/repository/docker/0rickyy0/blackjackbot) hosted on the official Docker Hub.
+### github生成
 
-You will also find the `docker-compose.yml` file with which you can easily set up your own instance of the bot.
-Just specify the path to your config etc. in said docker-compose file.
+```bash
+ssh-keygen -t rsa -C "lewis.q.zhang@letsallin.com" -f ~/.ssh/id_rsa_black
+cat /home/ubuntu/.ssh/id_rsa_black.pub
+```
